@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+		<h4><a href="mailto:flatlabb@gmail.com" target="_blank">flatlabb@gmail.com</a></h4>
+		<nav>
+			<li><a href="#Works" class="nav-link">works</a></li>
+			<li><a href="#About" class="nav-link">about</a></li>
+			<li><a href="#Contact_us" class="nav-link">contact us</a></li>
+		</nav>
+    </header>
+    
+    <ul class="social_networks">
+        <li><a href="https://www.behance.net/flatstudioua" target="_blank"><i class="fab fa-behance"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/flatstudio/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/flatlab_ua/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://t.me/flatlab" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+        <li><a href="mailto:flatlabb@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCfFJ7SlriefPRG0OZmviYSg" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+
+    <div id="main_video">
+        <div id="main-content">
+            <div class="responsive">
+                <iframe id="ytplayer" type="text/html" width="560" height="315"
+                src="https://www.youtube.com/embed/lhJ7vZG_qsc?controls=0&autoplay=1&mute=1&;loop=1&playlist=lhJ7vZG_qsc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section id="About" class="About">
+        <div class="making_an_idea_better">
+            <hr>
+
+            <div class="subtitle">mission</div>
+            
+            <h1 class="title">Making An <br> Idea Better</h1>
+        </div>
+
+        <div class="who_we_are">
+            <div class="Text">
+                <h2>Who we are</h2>
+
+                <hr>
+    
+                <p class="text">Flat studio is a young team of two ux ui designers, that does only one thing: design — and does it perfectly. We're really passionate about what we do. We love to create beautiful and high quality designs and we want to do it for our clients.
+                <br> The most important thing for us is that the client who receives our design is satisfied. We treat each client as a friend who needs help to make their dreams come true.  Your success is also our success. Quality, convenience and aesthetics are the main principles of our team.
+                <br> Let’s work together!
+                </p>
+    
+                <p class="text_2">Our projects will say more about us than ourselves.</p>
+            </div>
+
+            <div class="Services">
+                <h3 class="Services_title">Services</h3>
+                
+                <hr>
+                
+                <ul>
+                    <li><h3 class="ux">UX</h3></li>
+                    <li>wireframes</li>
+                    <li>prototypes</li>
+                    <li><h3 class="ux">UI</h3></li>
+                    <li>mockups</li>
+                    <li>graphics</li>
+                    <li>layouts</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Works" class="Portfolio">
+        <div class="Portfolio_title">
+            <h2>Portfolio</h2>
+
+            <hr>
+        </div>
+
+        <div class="Portfolio_photo">
+            <a href="https://www.behance.net/gallery/102678207/ACROSS-THE-LINE-LOGO-DESIGN" target="_blank" class="logo">
+                <div class="hover">
+                    <p>Across the line 
+                    <br> Logo design</p>
+                </div>
+            </a>
+
+            <a href="https://www.behance.net/gallery/102678207/ACROSS-THE-LINE-LOGO-DESIGN" target="_blank" class="blog">
+                <div class="hover">
+                    <p>Travel Blog 
+                    <br>ux/ui</p>
+                </div>
+            </a>
+
+            <a href="https://www.behance.net/gallery/102678207/ACROSS-THE-LINE-LOGO-DESIGN" target="_blank" class="port">
+                <div class="hover">
+                    <p>Black & White 
+                    <br>Portfolio</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer id="Contact_us">
+        <h2>Contact us</h2>
+
+        <hr>
+
+        <p class="Contact_text">Do you have a project you’d like to <br> collaborate on? Just send us email</p>
+
+        <div class="Contact_rights">
+            <h4>
+                <a href="mailto:flatlabb@gmail.com"  target="_blank"        class="mail_2">flatlabb@gmail.com</a>
+            </h4>
+
+            <div class="rights">© 2020 Flat studio. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/707ce058db.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$("a.nav-link").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+    </script>
+</body>
+</html>
